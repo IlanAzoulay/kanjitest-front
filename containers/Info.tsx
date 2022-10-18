@@ -162,7 +162,7 @@ function Info(){
 
         // Send to back-end
         axios
-            .post("http://localhost:8000/forms", state)
+            .post("https://kanjiback.herokuapp.com/forms", state)
             .then(response => {
                 console.log(response);
             })
