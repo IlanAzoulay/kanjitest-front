@@ -1,7 +1,7 @@
 import {AiOutlineCloudUpload} from 'react-icons/ai'
 import {useState, useEffect} from 'react';
 
-export default function(
+export default function PicUploader(
     {sendData}:
     {sendData: (value: File) => void}
     ) {
