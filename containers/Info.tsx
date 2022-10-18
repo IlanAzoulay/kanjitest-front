@@ -165,9 +165,11 @@ function Info(){
             .post("https://kanjiback.herokuapp.com/forms", state)
             .then(response => {
                 console.log(response);
+                setErrorMessage("Response from back: " + response.statusText);
             })
             .catch(error => {
                 console.log(error);
+                setErrorMessage("Response from back: " + error.statusText);
             })
     }
     
