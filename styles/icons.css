@@ -1,0 +1,23 @@
+.info-icon {
+    @apply absolute top-1 right-1;
+    @apply cursor-pointer;
+  }
+
+  .dropdown-icon {
+    @apply absolute right-2;
+    top: 50%;
+    translate: 0 -50%;
+  }
+
+  .upload-icon {
+    @apply absolute text-2xl opacity-75;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  .upload-icon-box {
+    @apply relative bg-gray-200 rounded-lg cursor-pointer;
+    @apply w-28 h-28;
+    overflow: hidden;
+  }

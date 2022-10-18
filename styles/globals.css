@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,90 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h1 {
+  @apply font-bold text-2xl py-2;
+}
+
+.page {
+  @apply flex flex-col gap-2;
+  width: 66%;
+}
+
+.fields-grid {
+  @apply grid grid-cols-2 justify-center z-0;
+  @apply gap-x-6 gap-y-4 mx-auto;
+  width: 100%;
+}
+
+.form-group {
+  @apply relative flex flex-col mx-auto w-full;
+  @apply gap-1;
+}
+
+.field {
+  border-width: 1px;
+  @apply border-gray-200 rounded-lg drop-shadow;
+  @apply px-2 py-2;
+}
+
+.field-number {
+  border-width: 1px;
+  @apply border-gray-200 rounded-l-lg drop-shadow w-full;
+  @apply px-2 py-2;
+}
+.field-number-max {
+  @apply bg-gray-200 rounded-r-lg drop-shadow;
+  @apply px-2 py-2;
+  white-space: nowrap;
+}
+
+.info-box {
+  @apply absolute top-1/2 left-1/2 z-20;
+  @apply bg-white/80 border-gray-300 border-2 rounded-lg px-4 py-2;
+  @apply drop-shadow;
+  translate: -50% -50%;
+}
+
+.upload-button {
+  @apply rounded-lg px-2 py-1 text-sm cursor-pointer;
+  @apply border-gray-500 text-gray-500;
+  border-width: 1px;
+}
+
+.submit-button {
+  @apply bg-black text-white rounded-lg px-4 py-2 mr-auto;
+}
+
+.dropdown-container, .dropdown-list {
+  @apply flex flex-col;
+}
+.dropdown-container {
+  @apply relative z-10 gap-2;
+}
+.dropdown-pos {
+  @apply absolute top-full left-0 w-full;
+}
+.dropdown-list {
+  border-width: 1px;
+  @apply border-gray-200 rounded-lg drop-shadow;
+  @apply bg-white z-20;
+  overflow: hidden;
+}
+
+.dropdown-option {
+  @apply hover:bg-gray-400 w-full h-full;
+  @apply p-2;
+}
+
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+}
+
+.more-options{
+  @apply pt-4 mr-auto;
+  @apply border-b-2 border-gray-400;
 }

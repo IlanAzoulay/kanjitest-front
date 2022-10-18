@@ -1,0 +1,48 @@
+[
+    {
+        "attribute": "blockchain",
+        "name": "Blockchain",
+        "required": true,
+        "type": "scroll",
+        "options": ["ETH", "Polygon"],
+        "info": "blabla"
+    },
+    {
+        "attribute": "platform",
+        "name": "Save my data on",
+        "required": true,
+        "type": "scroll",
+        "options": ["IPFS", "Arweave"],
+        "info": "blabla"
+    },
+    {
+        "attribute": "name",
+        "name": "Name of the collection",
+        "required": true,
+        "type": "text",
+        "placeholder": "Enter a name"
+    },
+    {
+        "attribute": "symbol",
+        "name": "Symbol of the collection",
+        "required": true,
+        "type": "text",
+        "placeholder": "Enter a name"
+    },
+    {
+        "attribute": "amount",
+        "name": "Amount of NFTs in the collection",
+        "required": true,
+        "type": "number",
+        "max": 10000,
+        "placeholder": "Enter an amount"
+    },
+    {
+        "attribute": "owner",
+        "name": "Owner",
+        "required": true,
+        "type": "text",
+        "placeholder": "Enter wallet address",
+        "info": "blabla"
+    }
+]
